@@ -1,50 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <title>출석 체크 현황</title>
-</head>
-<body>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
-    <link type="text/css" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>출근 및 검사 현황</title>
+  </head>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"
+    ></script>
+    <link
+      type="text/css"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+    ></script>
     <link rel="stylesheet" href="css/date.css" />
 
-    <div id="box"> 
-        <div class="title">출근 현황</div>
-        <div class="lab">
-            <a href="index.html">검사 결과 조회</a>
-        </div>
-        <br><br>
-        <div style="margin: 0 auto; text-align: center;">
-            <input type="text" name="" value='' class="datepicker inp" placeholder="날짜 선택" readonly="true" />
-            <script src="js/date.js"></script>
-        </div>
-        <div class="row d_flex" style="width:100%;  overflow:auto">
-            <table class="tg" id="checkInTable" cellspacing="0" cellpadding="0">
-                <thead>
-                    <tr class="upper">
-                        <th>근&nbsp무&nbsp자</th>
-                        <th>ID</th>
-                        <th>Belt</th>
-                        <th>Helmet</th>
-                        <th>Shoes</th>
-                        <th>Alcohol</th>
-                        <th>HeartBeat</th>
-                        <th>Temp</th>
-                        <th>Time</th>
-                    </tr>
-                </thead>
-            </table>
-            <script type="module" src="js/index.js"></script> 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        </div>
-        <br><br><br><br>
+    <div id="box">
+      <div class="title">출근 현황</div>
+      <div class="lab">
+        <a href="index.html">검사 결과 조회</a>
+      </div>
+      <br /><br />
+      <div style="margin: 0 auto; text-align: center">
+        <input
+          type="text"
+          name=""
+          value=""
+          class="datepicker inp"
+          placeholder="날짜 선택"
+          readonly="true"
+        />
+        <script src="js/date.js"></script>
+      </div>
+      <div class="row d_flex" style="width: 100%; overflow: auto">
+        <table class="tg" id="checkInTable" cellspacing="0" cellpadding="0">
+          <thead>
+            <tr class="upper">
+              <th>근&nbsp무&nbsp자</th>
+              <th>ID</th>
+              <th>Belt</th>
+              <th>Helmet</th>
+              <th>Shoes</th>
+              <th>Alcohol</th>
+              <th>HeartBeat</th>
+              <th>Temp</th>
+              <th>Time</th>
+            </tr>
+          </thead>
+        </table>
+        <script type="module" src="js/index.js"></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+          integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+          integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+      </div>
+      <br /><br /><br /><br />
     </div>
     <script type="module" src="js/scroll.js"></script>
-    <div class="topBtn" href="javascript:window.scrollTo(0,0);"><br>ㅅ<br>|</div>
-</body>
+    <div class="topBtn" href="javascript:window.scrollTo(0,0);">
+      <br />ㅅ<br />|
+    </div>
+  </body>
 </html>
